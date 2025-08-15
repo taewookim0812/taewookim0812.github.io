@@ -17,6 +17,12 @@ Education
 
 * **B.S. in Mechatronics Engineering**, Chungnam National University (CNU), February 2011
 
+
+* **Selected Graduate Coursework:**  
+  Completed a diverse set of graduate-level courses across UST and KAIST to strengthen **generalist capabilities essential for robotics** — a multidisciplinary field integrating AI, control, perception, and systems engineering — and to build a robust foundation for developing AI-driven, integrated robotic systems.  
+  * (UST) Digital Image Processing  
+  * (KAIST) Advanced Robotics Engineering, System Programming, Artificial Intelligence and Machine Learning, Computer Vision, Image Understanding, Optimization for Computer Vision, Deep Learning and Dynamic Neural Network Models
+
 Work experience
 ======
 * **Senior Researcher**, Social Robotics Research Section, Electronics and Telecommunications Research Institute (ETRI)  
