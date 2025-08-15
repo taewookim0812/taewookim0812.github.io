@@ -28,8 +28,10 @@ author:
   bio              : "Senior Researcher"
   location         : "Daejeon, South Korea"
   employer         : "ETRI"
+  employer_url     : "https://www.etri.re.kr/intro.html"
   uri              : # URL
-  email            : "twkim0812@gmail.com"
+  work_email       : "twkim0812@etri.re.kr"
+  personal_email   : "twkim0812@gmail.com"
 
   # Academic websites
   academia         : # URL
@@ -223,7 +225,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -269,10 +271,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: single
       author_profile: true
