@@ -1,0 +1,39 @@
+{% assign p = include.post %}
+{% assign title = p.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% if p.thumbnail %}
+  {% assign thumb = p.thumbnail %}
+{% elsif p.header and p.header.teaser %}
+  {% assign thumb = p.header.teaser %}
+{% else %}
+  {% assign thumb = site.teaser %}
+{% endif %}
+
+<div class="pub-row" style="display:flex;align-items:stretch;gap:12px;padding:12px 0;border-bottom:1px solid #e6e6e6;">
+  {% if thumb %}
+  <div class="pub-row__img" style="flex:0 0 200px;max-width:200px;display:flex;">
+    <img src="{{ thumb | relative_url }}"
+         alt="thumbnail for {{ title }}"
+         loading="lazy" decoding="async"
+         style="width:100%;height:100%;object-fit:cover;display:block;border-radius:6px;">
+  </div>
+  {% endif %}
+
+  <div class="pub-row__meta" style="flex:1 1 auto;min-width:0;">
+    <h3 class="pub-row__title" style="margin:0 0 4px 0;font-size:1.05rem;line-height:1.35;">
+      {{ title }}
+    </h3>
+
+    {% if p.authors %}
+      <div class="pub-row__authors" style="font-size:.95rem;color:#666;">{{ p.authors }}</div>
+    {% endif %}
+    {% if p.venue %}
+      <div class="pub-row__venue" style="font-size:.95rem;color:#666;">{{ p.venue }}</div>
+    {% endif %}
+
+    <div class="pub-row__links" style="margin-top:4px;font-size:.9rem;">
+      {% if p.paperurl %}<a href="{{ p.paperurl }}">Paper</a>{% endif %}
+      {% if p.video %}{% if p.paperurl %} · {% endif %}<a href="{{ p.video }}">Video</a>{% endif %}
+      {% if p.code %}{% if p.video or p.paperurl %} · {% endif %}<a href="{{ p.code }}">Code</a>{% endif %}
+    </div>
+  </div>
+</div>

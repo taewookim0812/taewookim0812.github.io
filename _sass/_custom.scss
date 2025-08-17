@@ -1,0 +1,51 @@
+/* Publications list (left thumb, right meta) */
+.pub-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color, #e6e6e6);
+}
+
+.pub-row__img {
+  flex: 0 0 120px;      /* <<< 썸네일 고정 너비 (원하면 100~140px로 조절) */
+  max-width: 120px;
+}
+
+.pub-row__img img {
+  width: 100%;
+  height: auto;         /* 비율 유지 */
+  display: block;
+  border-radius: 6px;
+  /* 썸네일 세로를 딱 맞추고 싶으면 아래 두 줄을 사용 (이미지 크롭) */
+  /* height: 80px;
+  object-fit: cover; */
+}
+
+.pub-row__meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pub-row__title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.pub-row__authors,
+.pub-row__venue {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.pub-row__links a {
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* 모바일: 세로 스택 */
+@media (max-width: 640px) {
+  .pub-row { flex-direction: column; }
+  .pub-row__img { max-width: 100%; flex-basis: auto; }
+}
