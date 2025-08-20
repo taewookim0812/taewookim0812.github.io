@@ -41,3 +41,13 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Dark-mode tweak for publication meta text */
+html.dark .pub-row__authors,
+html.dark .pub-row__venue,
+body.dark .pub-row__authors,
+body.dark .pub-row__venue,
+[data-theme="dark"] .pub-row__authors,
+[data-theme="dark"] .pub-row__venue {
+  color: #b3b3b3 !important; /* #aaa~#bbb 정도가 ‘약간 밝게’ */
+}
