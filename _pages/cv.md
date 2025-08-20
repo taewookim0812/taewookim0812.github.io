@@ -38,7 +38,7 @@ Work experience
   * Feb 2021  
   * Received full-time offer after internship; offer coincided with ETRI Senior Researcher offer, chose to join ETRI.
 
-* **Internship**, Clova Avatar team, NAVER Corp.  
+* **PhD Internship**, Clova Avatar team, NAVER Corp.  
   * Sep 2020 – Jan 2021
 
 * **Chief Technical Officer (CTO) & Co-Founder**, ExoSystems, Inc.  
