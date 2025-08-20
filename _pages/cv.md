@@ -21,7 +21,14 @@ Education
 * **Selected Graduate Coursework:**  
   Completed a diverse set of graduate-level courses across UST and KAIST to strengthen **generalist capabilities essential for robotics** — a multidisciplinary field integrating AI, control, perception, and systems engineering — and to build a robust foundation for developing AI-driven, integrated robotic systems.  
   * (UST) Digital Image Processing  
-  * (KAIST) Advanced Robotics Engineering, System Programming, Artificial Intelligence and Machine Learning, Computer Vision, Image Understanding, Optimization for Computer Vision, Deep Learning and Dynamic Neural Network Models
+  * (KAIST) 
+    * Advanced Robotics Engineering (*Prof. Dong-Soo Kwon*)
+    * Artificial Intelligence and Machine Learning (*Prof. Alice Oh*)
+    * Computer Vision (*Prof. In So Kweon*)
+    * Optimization for Computer Vision (*Prof. Yu-Wing Tai*) 
+    * Deep Learning and Dynamic Neural Network Models (*Prof. Jun Tani*)
+    * System Programming
+    * Image Understanding
 
 Work experience
 ======
@@ -60,7 +67,13 @@ Field of Interests
 * Robotics
 * Motion Retargeting
 
-Skills
+Skills(Algorithms)
+====== 
+* **Robotics:** Kinematic Modeling, Kinematic Control, Trajectory Planning, CCDIK(Cyclic Coordinate Descent IK), Damped Least Square IK, Motion Retargeting(Analytic, Numerical, Learning bsed methods)
+* **Perception:** Intrinsic/Extrinsic Camera Calibration, Basic Image Processing Algorithms
+* **Reinforcement Learning:** On/Off Policy Learning(PPO, SAC), Multi-Agent RL
+
+Skills(Tools)
 ======
 * **Programming Languages:** Python, C/C++, C\#, Lua, MATLAB, Mathematica, Labview, R, PHP  
 * **Robotics & Perception:** ROS, ROS2, MoveIt2, OpenCV  
