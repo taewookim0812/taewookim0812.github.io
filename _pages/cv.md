@@ -27,8 +27,7 @@ Education
     * Computer Vision (*Prof. In So Kweon*)
     * Optimization for Computer Vision (*Prof. Yu-Wing Tai*) 
     * Deep Learning and Dynamic Neural Network Models (*Prof. Jun Tani*)
-    * System Programming
-    * Image Understanding
+    * among others (e.g., System Programming, Image Understanding)
 
 Work experience
 ======
