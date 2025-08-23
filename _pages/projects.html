@@ -5,6 +5,12 @@ permalink: /projects/
 author_profile: true
 ---
 
+<p class="projects-intro" style="margin-bottom:20px;">
+  This section presents selected projects that are either <strong>unpublished</strong>, <strong>in-progress</strong>, or <strong>prototype implementations</strong>.
+  They are complementary to, but not overlapping with, the works listed in the <a href="/publications/">Publications</a> section.
+</p>
+
+
 {% assign items = site.projects | sort: "year" | reverse %}
 {% for p in items %}
   {% include project-row.html project=p %}
