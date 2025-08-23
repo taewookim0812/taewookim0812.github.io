@@ -1,34 +1,48 @@
-/* ---- Force layout inside Minimal Mistakes content container ---- */
-.page__content .proj-row {
+/* === Square thumbnail: fixed box, no crop, keep original aspect === */
+.page__content .proj-row__img{
+  /* 고정 정사각형 박스 */
+  width: 240px !important;
+  height: 240px !important;
+  max-width: 240px !important;
+  min-width: 240px !important;
+  flex: 0 0 240px !important;
+
   display: flex !important;
-  gap: 16px;
-  padding: 16px 0;
-  border-bottom: 1px solid #e6e6e6;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+
+  /* 레터박스 느낌을 위해 배경색(원하는 색으로 변경 가능) */
+  background: #0a0a0a0d; /* very light gray; 다크모드면 더 진하게 조정 가능 */
+  overflow: hidden;      /* 내부 미디어가 박스를 넘지 않도록 */
+  box-sizing: border-box;
 }
 
-.page__content .proj-row__img {
-  flex: 0 0 280px;
-  max-width: 280px;
-  display: flex !important;
-}
-
-.page__content .proj-row__img > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block !important;  /* 테마의 이미지 정렬 규칙 무력화 */
+/* 이미지나 비디오 모두 동일 적용 */
+.page__content .proj-row__img > img,
+.page__content .proj-row__img > video{
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;    /* <= 핵심: 비율 유지 + 잘림 없이 맞추기 */
+  object-position: center center !important;
   margin: 0 !important;
-  border-radius: 8px;
+  border-radius: 8px;                /* 모서리 라운드 유지 원하면 */
 }
 
-.page__content .proj-row__meta { flex: 1 1 auto; min-width: 0; }
-
-/* dark mode tweaks still apply as-is */
-
-/* breakpoints: 데스크톱/태블릿은 가로 유지, 아주 좁은 화면만 세로 */
-@media (max-width: 560px) {
-  .page__content .proj-row { flex-direction: column; }
-  .page__content .proj-row__img { flex: 0 0 auto; max-width: 100%; }
+/* 모바일에선 가로폭에 맞추고 동일한 정사각형 유지 */
+@media (max-width: 560px){
+  .page__content .proj-row__img{
+    width: 100% !important;
+    height: auto !important;         /* 먼저 폭을 100%로 */
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: 0 0 auto !important;
+    aspect-ratio: 1 / 1;             /* 정사각형 유지 */
+  }
+  .page__content .proj-row__img > img,
+  .page__content .proj-row__img > video{
+    width: 100% !important;
+    height: 100% !important;         /* 정사각 박스 채우되 잘림 없이 */
+    object-fit: contain !important;
+  }
 }
-
