@@ -1,0 +1,11 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% assign items = site.projects | sort: "year" | reverse %}
+{% for p in items %}
+  {% include project-row.html project=p %}
+{% endfor %}

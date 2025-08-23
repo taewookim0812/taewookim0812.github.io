@@ -1,0 +1,34 @@
+/* ---- Force layout inside Minimal Mistakes content container ---- */
+.page__content .proj-row {
+  display: flex !important;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e6e6e6;
+  align-items: stretch;
+}
+
+.page__content .proj-row__img {
+  flex: 0 0 280px;
+  max-width: 280px;
+  display: flex !important;
+}
+
+.page__content .proj-row__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block !important;  /* 테마의 이미지 정렬 규칙 무력화 */
+  margin: 0 !important;
+  border-radius: 8px;
+}
+
+.page__content .proj-row__meta { flex: 1 1 auto; min-width: 0; }
+
+/* dark mode tweaks still apply as-is */
+
+/* breakpoints: 데스크톱/태블릿은 가로 유지, 아주 좁은 화면만 세로 */
+@media (max-width: 560px) {
+  .page__content .proj-row { flex-direction: column; }
+  .page__content .proj-row__img { flex: 0 0 auto; max-width: 100%; }
+}
+

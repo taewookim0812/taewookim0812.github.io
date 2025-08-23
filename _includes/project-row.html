@@ -1,0 +1,30 @@
+{% assign p = include.project %}
+<div class="proj-row">
+  {% if p.thumb %}
+  <div class="proj-row__img">
+    <img src="{{ p.thumb | relative_url }}" alt="thumbnail for {{ p.title | escape }}" loading="lazy" decoding="async">
+  </div>
+  {% endif %}
+
+  <div class="proj-row__meta">
+    <div class="proj-row__headline">
+      <span class="proj-row__year">[{{ p.year }}]</span>
+      {% if p.affiliation %}<span class="proj-row__affil">, {{ p.affiliation }}</span>{% endif %}
+      {% if p.venue %}<span class="proj-row__venue">, {{ p.venue }}</span>{% endif %}
+    </div>
+
+    <h3 class="proj-row__title">{{ p.title }}</h3>
+
+    <div class="proj-row__desc">
+      <strong>Project description</strong>
+      {% if p.role %}<div><em>Role:</em> {{ p.role }}</div>{% endif %}
+      {% if p.methods %}<div><em>Methods:</em> {{ p.methods }}</div>{% endif %}
+      {% if p.tools %}<div><em>Tools & Libraries:</em> {{ p.tools }}</div>{% endif %}
+      <div class="proj-row__links">
+        {% if p.video %}<a href="{{ p.video }}">video</a>{% endif %}
+        {% if p.code %}{% if p.video %} · {% endif %}<a href="{{ p.code }}">code</a>{% endif %}
+        {% if p.press %}{% if p.video or p.code %} · {% endif %}<a href="{{ p.press }}">press</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</div>
