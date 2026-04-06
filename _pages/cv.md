@@ -109,6 +109,14 @@ Publications
 1. *파이썬 예제와 함께하는 강화학습 입문*, 2019 (김승현, 김태우 외)  
 2. *강화학습의 로봇 응용 소개*, 로봇과 인간, 2018 (김태우, 이주행)
 
+Patents
+======
+**Domestic (국내)**  
+1. **[Registered]** **거대 언어 모델을 이용한 스킬 불확실성 기반 로봇 스킬 수행 방법 및 장치**  
+   (*Method and Apparatus for Performing Robot Skill Based on Skill Uncertainty Using Large Language Model*)  
+   <u>Taewoo Kim</u>, Jaehong Kim, Youngwoo Yoon, Minsu Jang, Jaewoo Choi  
+   Reg. No. 10-2901717-0000 (2025.12.15) | ETRI
+
 Talks
 ======
 - *A Tutorial on Reinforcement Learning* (ETRI)
