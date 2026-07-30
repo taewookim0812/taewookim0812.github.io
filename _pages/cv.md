@@ -31,7 +31,7 @@ Education
 
 Work experience
 ======
-* **Senior Researcher**, Social Robotics Research Section, Electronics and Telecommunications Research Institute (ETRI)  
+* **Senior Researcher**, Robot Foundation Model Research Section, Electronics and Telecommunications Research Institute (ETRI)  
   * Feb 2021 – Present
 
 * **Software Engineer (Full-time Offer)**, Clova Avatar Team, NAVER Corp.  
