@@ -111,6 +111,11 @@ Publications
 
 Patents
 ======
+**International (국제)**  
+1. **[Registered]** **Method and Apparatus for Performing Robot Skill Based on Skill Uncertainty Using Large Language Model**  
+   <u>Taewoo Kim</u>, Jaehong Kim, Youngwoo Yoon, Minsu Jang, Jaewoo Choi  
+   US Patent No. 12649230 B2 (2026.06.09) | ETRI
+
 **Domestic (국내)**  
 1. **[Registered]** **거대 언어 모델을 이용한 스킬 불확실성 기반 로봇 스킬 수행 방법 및 장치**  
    (*Method and Apparatus for Performing Robot Skill Based on Skill Uncertainty Using Large Language Model*)  
